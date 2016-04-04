@@ -1,16 +1,16 @@
-/*
- *	httpyauth 0.1
- *
- *
- *	This software:
- *		This software is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *	History
- *	2016-04-04	RagingWeb	first commit
- */
+#
+#	httpyauth 0.1
+#
+#
+#	This software:
+#		This software is free software; you can redistribute it and/or
+#		modify it under the terms of the GNU General Public License
+#		as published by the Free Software Foundation; either version
+#		2 of the License, or (at your option) any later version.
+#
+#	History
+#	2016-04-04	RagingWeb	first commit
+#
 
 import BaseHTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
@@ -57,7 +57,7 @@ def test(HandlerClass = AuthHandler,
 
 if __name__ == '__main__':
     if len(sys.argv)<3:
-        print "usage httpyauth.py [port] [username:password]"
+        print "usage Httpyauth.py [port] [username:password]"
         sys.exit()
     key = base64.b64encode(sys.argv[2])
     test()
